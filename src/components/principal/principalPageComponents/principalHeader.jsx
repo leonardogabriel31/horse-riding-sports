@@ -37,7 +37,6 @@ function PrincipalHeader() {
               display: "flex",
               justifyContent: "center",
               alignItems: "flex-start",
-              // gap: 2,
             }}
           >
             <Grid
