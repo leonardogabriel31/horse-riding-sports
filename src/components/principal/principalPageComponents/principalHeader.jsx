@@ -95,8 +95,8 @@ function PrincipalHeader() {
               <Box
                 component={"div"}
                 sx={{
-                  width: 400, // Ajusta el tamaño del círculo
-                  height: 400, // Ajusta el tamaño del círculo
+                  width: 400, 
+                  height: 400, 
                   border: "2px solid rgba(200, 200, 200, 0.5)", // Color y grosor del borde
                   borderRadius: "50%", // Hace que el Box sea un círculo
                   display: "flex",
