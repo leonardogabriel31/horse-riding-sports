@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
-import PrincipalHeader from './principalPageComponents/principalHeader'
-import Navbar from './principalPageComponents/navbar'
+import PrincipalHeader from './principalPageComponents/principal_header/principalHeader'
+import Navbar from '../navbar/navbar'
 
 function PrincipalPage() {
   return (
