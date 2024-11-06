@@ -7,7 +7,7 @@ function SecondHeader() {
       <Box
         component={"div"}
         sx={{
-          paddingTop: 5,
+          paddingTop: 10,
           background: "#F2FFFF",
           display: "flex",
           justifyContent: "center",
@@ -27,8 +27,25 @@ function SecondHeader() {
             overflow: "hidden",
             width: "100%",
             height: 850,
+            display: "flex",
+            flexDirection: "column",
           }}
         >
+          <Box
+            component={"div"}
+            sx={{
+              marginLeft: 26,
+              width: 510,
+            }}
+          >
+            <Typography
+              component={"div"}
+              variant={"h2"}
+              sx={{ fontWeight: "bold", fontSize: 75 }}
+            >
+              Racing Horse Details
+            </Typography>
+          </Box>
           <Box component={"div"}>
             <Box
               id="1"
@@ -39,7 +56,7 @@ function SecondHeader() {
                 border: "2px solid rgba(200, 200, 200, 0.5)",
                 borderRadius: "50%",
                 position: "absolute",
-                bottom: "-94.6%",
+                bottom: "-99%",
                 background: "rgba(240, 240, 240)",
                 left: "37.4%",
                 display: "flex",
@@ -76,7 +93,7 @@ function SecondHeader() {
                 border: "2px solid rgba(255, 0, 0)",
                 borderRadius: "35px",
                 position: "absolute",
-                bottom: "-90.6%",
+                bottom: "-95%",
                 background: "rgba(250, 250, 250)",
                 left: "22%",
                 display: "flex",
@@ -98,7 +115,7 @@ function SecondHeader() {
               border: "2px solid rgba(200, 200, 200, 0.5)",
               borderRadius: "50%",
               position: "absolute",
-              bottom: "-94.6%",
+              bottom: "-99%",
               background: "rgba(240, 240, 240)",
               left: "48.3%",
               display: "flex",
@@ -155,7 +172,7 @@ function SecondHeader() {
               border: "2px solid rgba(200, 200, 200, 0.5)",
               borderRadius: "50%",
               position: "absolute",
-              bottom: "-91.5%",
+              bottom: "-96%",
               background: "rgba(240, 240, 240)",
               left: "64.6%",
               display: "flex",
@@ -212,7 +229,7 @@ function SecondHeader() {
               border: "2px solid rgba(200, 200, 200, 0.5)",
               borderRadius: "50%",
               position: "absolute",
-              bottom: "-109%",
+              bottom: "-113%",
               background: "rgba(240, 240, 240)",
               left: "60.8%",
               display: "flex",
@@ -269,7 +286,7 @@ function SecondHeader() {
               border: "2px solid rgba(200, 200, 200, 0.5)",
               borderRadius: "50%",
               position: "absolute",
-              bottom: "-127%",
+              bottom: "-131%",
               background: "rgba(240, 240, 240)",
               left: "57.1%",
               display: "flex",
@@ -326,7 +343,7 @@ function SecondHeader() {
               border: "2px solid rgba(200, 200, 200, 0.5)",
               borderRadius: "50%",
               position: "absolute",
-              bottom: "-126%",
+              bottom: "-130.2%",
               background: "rgba(240, 240, 240)",
               left: "41.3%",
               display: "flex",
@@ -383,7 +400,7 @@ function SecondHeader() {
               border: "2px solid rgba(200, 200, 200, 0.5)",
               borderRadius: "50%",
               position: "absolute",
-              bottom: "-113.2%",
+              bottom: "-117%",
               background: "rgba(240, 240, 240)",
               left: "34%",
               display: "flex",
