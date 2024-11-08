@@ -11,14 +11,14 @@ function ThreeHeader() {
       <Box
         component={"div"}
         sx={{
-          background: "rgb(1, 19, 28)",
+          background: "rgb(4, 20, 27)",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
           width: "100%",
           height: "100%",
-          paddingTop: 15,
+          marginTop: "-95px",
           paddingBottom: "100px",
         }}
       >

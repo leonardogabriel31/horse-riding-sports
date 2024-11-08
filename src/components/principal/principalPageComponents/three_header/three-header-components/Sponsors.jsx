@@ -12,6 +12,66 @@ function Sponsors() {
           textAlign: "center",
         }}
       >
+        <Grid
+          container
+          direction="row"
+          sx={{
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Grid
+            item
+            id={"4"}
+            xl={12}
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              background: "rgb(0, 20, 28)",
+            }}
+          >
+            <Box
+              component={"div"}
+              sx={{
+                width: "100%",
+                borderRadius: "20px",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
+              }}
+            >
+              <Box
+                component={"div"}
+                sx={{
+                  width: "100%",
+                  height: "360px",
+                  borderRadius: "20px",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  flexDirection: "column",
+                  position: "relative",
+                  // marginTop: "100px",
+                }}
+              >
+                <Box
+                  component={"div"}
+                  sx={{
+                    backgroundImage: "url(border2.png)",
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                    width: "100%",
+                    height: "100%",
+                    // transform: "translate(0px, -130px)",
+                  }}
+                />
+              </Box>
+            </Box>
+          </Grid>
+        </Grid>
+
         <Box component={"div"}>
           <Typography
             component={"div"}
