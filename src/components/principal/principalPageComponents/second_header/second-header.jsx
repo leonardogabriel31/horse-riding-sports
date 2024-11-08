@@ -46,56 +46,55 @@ function SecondHeader() {
               Racing Horse Details
             </Typography>
           </Box>
-          <Box component={"div"}>
+          <Box
+            id="1"
+            component={"div"}
+            sx={{
+              width: 55,
+              height: 55,
+              border: "2px solid rgba(200, 200, 200, 0.5)",
+              borderRadius: "50%",
+              position: "absolute",
+              bottom: "-119%",
+              background: "rgba(240, 240, 240)",
+              right: "60%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              //   transform: "translate(-50%, -50%)",
+            }}
+          >
             <Box
-              id="1"
               component={"div"}
               sx={{
-                width: 55,
-                height: 55,
+                backgroundImage: "url(/herradura.avif)",
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                backgroundAttachment: "absolute",
+                backgroundPosition: "center",
+                overflow: "hidden",
                 border: "2px solid rgba(200, 200, 200, 0.5)",
                 borderRadius: "50%",
-                position: "absolute",
-                bottom: "-99%",
-                background: "rgba(240, 240, 240)",
-                left: "37.4%",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                //   transform: "translate(-50%, -50%)",
+                width: 40,
+                height: 40,
               }}
-            >
-              <Box
-                component={"div"}
-                sx={{
-                  backgroundImage: "url(/herradura.avif)",
-                  backgroundSize: "cover",
-                  backgroundRepeat: "no-repeat",
-                  backgroundAttachment: "absolute",
-                  backgroundPosition: "center",
-                  overflow: "hidden",
-                  border: "2px solid rgba(200, 200, 200, 0.5)",
-                  borderRadius: "50%",
-                  width: 40,
-                  height: 40,
-                }}
-              />
-            </Box>
+            />
             <Box
               component={"div"}
               sx={{
                 // width: 55,
                 // height: 55,
+                // width: 210,
                 fontSize: 25,
                 padding: 2,
-                paddingLeft: 4,
-                paddingRight: 4,
+                paddingLeft: 2,
+                paddingRight: 2,
                 border: "2px solid rgba(255, 0, 0)",
                 borderRadius: "35px",
                 position: "absolute",
-                bottom: "-95%",
-                background: "rgba(250, 250, 250)",
-                left: "22%",
+                bottom: "70%",
+                background: "rgba(260, 260, 260)",
+                left: "-560%",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
@@ -115,7 +114,7 @@ function SecondHeader() {
               border: "2px solid rgba(200, 200, 200, 0.5)",
               borderRadius: "50%",
               position: "absolute",
-              bottom: "-99%",
+              bottom: "-119%",
               background: "rgba(240, 240, 240)",
               left: "48.3%",
               display: "flex",
@@ -172,7 +171,7 @@ function SecondHeader() {
               border: "2px solid rgba(200, 200, 200, 0.5)",
               borderRadius: "50%",
               position: "absolute",
-              bottom: "-96%",
+              bottom: "-116%",
               background: "rgba(240, 240, 240)",
               left: "64.6%",
               display: "flex",
@@ -229,7 +228,7 @@ function SecondHeader() {
               border: "2px solid rgba(200, 200, 200, 0.5)",
               borderRadius: "50%",
               position: "absolute",
-              bottom: "-113%",
+              bottom: "-133%",
               background: "rgba(240, 240, 240)",
               left: "60.8%",
               display: "flex",
@@ -286,9 +285,9 @@ function SecondHeader() {
               border: "2px solid rgba(200, 200, 200, 0.5)",
               borderRadius: "50%",
               position: "absolute",
-              bottom: "-131%",
+              bottom: "-151.2%",
               background: "rgba(240, 240, 240)",
-              left: "57.1%",
+              left: "57.2%",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -343,7 +342,7 @@ function SecondHeader() {
               border: "2px solid rgba(200, 200, 200, 0.5)",
               borderRadius: "50%",
               position: "absolute",
-              bottom: "-130.2%",
+              bottom: "-150.5%",
               background: "rgba(240, 240, 240)",
               left: "41.3%",
               display: "flex",
@@ -400,7 +399,7 @@ function SecondHeader() {
               border: "2px solid rgba(200, 200, 200, 0.5)",
               borderRadius: "50%",
               position: "absolute",
-              bottom: "-117%",
+              bottom: "-137.5%",
               background: "rgba(240, 240, 240)",
               left: "34%",
               display: "flex",
