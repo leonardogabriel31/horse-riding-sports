@@ -8,11 +8,13 @@ import { Drawer, List, ListItem, Typography } from "@mui/material";
 import Link from "next/link";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
-import { ButtonsNavbar } from "@/services/buttonsNavbar";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import { ButtonsNavbar2 } from "@/services/buttonsNavbar";
 import { StyledToolbar } from "@/styles/index";
 
-function Navbar() {
+function NavbarFooter() {
   const [openDrawer, setOpenDrawer] = useState(false);
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("806"));
@@ -22,9 +24,9 @@ function Navbar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar
-        position="absolute"
-        elevation={0}
+      <Box
+        // position="fixed"
+        // elevation={0}
         sx={{
           background: "transparent",
           transition: "background 0.4s",
@@ -57,7 +59,7 @@ function Navbar() {
                 HR
               </Typography>
             </Box>
-            <Box component={"div"}>
+            <Box component={"div"} sx={{ color: "rgb(200, 200, 200)" }}>
               <Typography variant={"h6"}>Horse</Typography>
               <Typography variant={"h6"}>Riding</Typography>
             </Box>
@@ -66,7 +68,7 @@ function Navbar() {
             component={"div"}
             sx={{ display: "flex", alignItems: "center", gap: 3 }}
           >
-            {ButtonsNavbar.map((buttonNavbar, index) => (
+            {ButtonsNavbar2.map((buttonNavbar, index) => (
               <Link key={index} href={buttonNavbar.route}>
                 <Button
                   sx={{
@@ -86,24 +88,83 @@ function Navbar() {
               </Link>
             ))}
           </Box>
-          <Box component={"div"}>
-            <Button
-              size="large"
+          <Box
+            component={"div"}
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              gap: 2,
+            }}
+          >
+            <Box
+              component={"div"}
               sx={{
-                backgroundColor: "#fC4B08",
-                color: "white",
-                textTransform: "none",
-                fontSize: "1.20rem",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                width: 70,
+                height: 70,
+                border: "2px solid #fC4B08",
+                borderRadius: "50%",
+                cursor: "pointer",
               }}
             >
-              Contact Us | <ArrowOutwardIcon />
-            </Button>
+              <FacebookIcon
+                sx={{
+                  fontSize: 35,
+                  color: "#fC4B08",
+                }}
+              />
+            </Box>
+
+            <Box
+              component={"div"}
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                width: 70,
+                height: 70,
+                border: "2px solid #fC4B08",
+                borderRadius: "50%",
+                cursor: "pointer",
+              }}
+            >
+              <InstagramIcon
+                sx={{
+                  fontSize: 35,
+                  color: "#fC4B08",
+                }}
+              />
+            </Box>
+
+            <Box
+              component={"div"}
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                width: 70,
+                height: 70,
+                border: "2px solid #fC4B08",
+                borderRadius: "50%",
+                cursor: "pointer",
+              }}
+            >
+              <TwitterIcon
+                sx={{
+                  fontSize: 35,
+                  color: "#fC4B08",
+                }}
+              />
+            </Box>
           </Box>
         </Toolbar>
-      </AppBar>
+      </Box>
       <Drawer anchor="left" open={openDrawer} onClose={toggleDrawer(false)}>
         <List>
-          {ButtonsNavbar.map((buttonNavbar, index) => (
+          {ButtonsNavbar2.map((buttonNavbar, index) => (
             <Link href={buttonNavbar.route} key={index}>
               <ListItem>{buttonNavbar.name}</ListItem>
             </Link>
@@ -114,4 +175,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default NavbarFooter;

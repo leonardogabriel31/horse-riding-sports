@@ -4,6 +4,7 @@ import Navbar from "../navbar/navbar";
 import SecondHeader from "./principalPageComponents/second_header/second-header";
 import ThreeHeader from "./principalPageComponents/three_header/three-header";
 import FourHeader from "./principalPageComponents/four_header/fourHeader";
+import Footer from "./principalPageComponents/five_header/footer";
 
 function PrincipalPage() {
   return (
@@ -13,6 +14,7 @@ function PrincipalPage() {
       <SecondHeader />
       <ThreeHeader />
       <FourHeader />
+      <Footer />
     </Fragment>
   );
 }
