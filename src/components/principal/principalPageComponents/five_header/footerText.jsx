@@ -1,39 +1,43 @@
 import { Box, Typography } from "@mui/material";
-import React, { Fragment } from "react";
+import React from "react";
 
 function FooterText() {
   return (
-    <Fragment>
-      <Box
-        component={"div"}
+    <Box
+      component="div"
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        textAlign: "center",
+        width: "100vw", 
+        height: "20vh", 
+      }}
+    >
+      <Typography
+        variant="h3"
         sx={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          marginTop: 5,
-        //   width: "80%",
-        //   height: "80%",
+          textAlign: "center",
+          fontWeight: "bold",
+          color: "rgb(200, 200, 200)",
+          marginLeft: { xs: "2vw", md: "2vw", lg: "2vw", xl: "2vw" }, 
+          marginRight: { xs: "5vw", md: "5vw", lg: "5vw", xl: "5vw" },
+          width: { md: "20vw", md: "25vw", lg: "23vw", xl: "17vw" }, 
+          fontSize: {
+            xs: "1.5rem",
+            sm: "1.5rem",
+            md: "1.6rem",
+            lg: "2rem",
+            xl: "2rem",
+          }, 
         }}
       >
-        <Typography
-          variant={"h3"}
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            textAlign: "center",
-            fontWeight: "bold",
-            color: "rgb(200, 200, 200)",
-            marginLeft: 40,
-            marginRight: 40,
-            width: "25%",
-            height: "50%",
-          }}
-        >
-          Master The Ride, Embrace The Journey.
-        </Typography>
-      </Box>
-    </Fragment>
+        Master The Ride, Embrace The Journey.
+      </Typography>
+    </Box>
   );
 }
 

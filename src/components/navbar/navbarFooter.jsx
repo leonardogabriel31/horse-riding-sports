@@ -8,13 +8,14 @@ import { Drawer, List, ListItem, Typography } from "@mui/material";
 import Link from "next/link";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
+import MenuIcon from "@mui/icons-material/Menu";
+import { ButtonsNavbar2 } from "@/services/buttonsNavbar";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import { ButtonsNavbar2 } from "@/services/buttonsNavbar";
-import { StyledToolbar } from "@/styles/index";
 
-function NavbarFooter() {
+function Navbar() {
   const [openDrawer, setOpenDrawer] = useState(false);
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("806"));
@@ -25,19 +26,18 @@ function NavbarFooter() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Box
-        // position="fixed"
-        // elevation={0}
         sx={{
           background: "transparent",
           transition: "background 0.4s",
-          padding: 2,
-          paddingLeft: 23,
-          paddingRight: 23,
+          padding: 1,
+          paddingLeft: { xs: 2, sm: 3, md: 3, lg: 3, xl: 3 },
+          paddingRight: { xs: 2, sm: 3, md: 3, lg: 3, xl: 3 },
         }}
       >
         <Toolbar
           sx={{
             display: "flex",
+            flexWrap: "wrap",
             justifyContent: "space-between",
             alignItems: "center",
           }}
@@ -48,46 +48,57 @@ function NavbarFooter() {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              gap: 2,
+              gap: 1,
             }}
           >
             <Box component={"div"}>
               <Typography
-                variant={"h1"}
+                variant="h2"
                 sx={{ fontWeight: "bold", color: "#fC4B08" }}
               >
                 HR
               </Typography>
             </Box>
-            <Box component={"div"} sx={{ color: "rgb(200, 200, 200)" }}>
-              <Typography variant={"h6"}>Horse</Typography>
-              <Typography variant={"h6"}>Riding</Typography>
+            <Box component={"div"}>
+              <Typography
+                variant="body1"
+                sx={{ fontSize: 20, color: "rgb(200, 200, 200)" }}
+              >
+                Horse
+              </Typography>
+              <Typography
+                variant="body1"
+                sx={{ fontSize: 20, color: "rgb(200, 200, 200)" }}
+              >
+                Riding
+              </Typography>
             </Box>
           </Box>
           <Box
             component={"div"}
-            sx={{ display: "flex", alignItems: "center", gap: 3 }}
+            sx={{ display: "flex", alignItems: "center", gap: 2 }}
           >
-            {ButtonsNavbar2.map((buttonNavbar, index) => (
-              <Link key={index} href={buttonNavbar.route}>
-                <Button
-                  sx={{
-                    display: { xs: isSmallScreen ? "none" : "inline" },
-                    fontSize: 20,
-                    color: "rgb(200, 200, 200)",
-                    textTransform: "none",
-                    "&:hover": {
-                      color: "white",
-                      backgroundColor: "#fC4B08",
-                    },
-                    marginRight: 2, // Espacio entre los botones
-                  }}
-                >
-                  {buttonNavbar.name}
-                </Button>
-              </Link>
-            ))}
+            {!isSmallScreen &&
+              ButtonsNavbar2.map((buttonNavbar, index) => (
+                <Link key={index} href={buttonNavbar.route}>
+                  <Button
+                    sx={{
+                      fontSize: { xs: 14, md: 20 },
+                      color: "rgb(200, 200, 200)",
+                      textTransform: "none",
+                      "&:hover": {
+                        color: "white",
+                        backgroundColor: "#fC4B08",
+                      },
+                      marginRight: 2,
+                    }}
+                  >
+                    {buttonNavbar.name}
+                  </Button>
+                </Link>
+              ))}
           </Box>
+
           <Box
             component={"div"}
             sx={{
@@ -160,13 +171,24 @@ function NavbarFooter() {
               />
             </Box>
           </Box>
+
+          {isSmallScreen && (
+            <MenuIcon
+              onClick={toggleDrawer(true)}
+              sx={{
+                cursor: "pointer",
+                fontSize: 35,
+                color: "rgb(200, 200, 200)",
+              }}
+            />
+          )}
         </Toolbar>
       </Box>
       <Drawer anchor="left" open={openDrawer} onClose={toggleDrawer(false)}>
         <List>
           {ButtonsNavbar2.map((buttonNavbar, index) => (
             <Link href={buttonNavbar.route} key={index}>
-              <ListItem>{buttonNavbar.name}</ListItem>
+              <ListItem button>{buttonNavbar.name}</ListItem>
             </Link>
           ))}
         </List>
@@ -175,4 +197,4 @@ function NavbarFooter() {
   );
 }
 
-export default NavbarFooter;
+export default Navbar;
