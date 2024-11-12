@@ -30,7 +30,13 @@ function PrincipalHeader() {
             container
             direction="row"
             sx={{
-              marginTop: { xs: "15vh", sm: "22vh", md: "20vh", lg: "-2vh", xl: "-3vh" },
+              marginTop: {
+                xs: "15vh",
+                sm: "22vh",
+                md: "20vh",
+                lg: "-2vh",
+                xl: "-3vh",
+              },
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -67,7 +73,7 @@ function PrincipalHeader() {
                       sm: "40px",
                       md: "60px",
                       lg: "70px",
-                    }, 
+                    },
                   }}
                 >
                   Improve Your{" "}
@@ -129,7 +135,7 @@ function PrincipalHeader() {
                 <Image
                   width={900}
                   height={850}
-                  layout="responsive"
+                  priority
                   src={"/horse-header.png"}
                   alt={"image-header-horse"}
                   style={{ maxWidth: "100%", height: "auto" }} 
@@ -159,7 +165,6 @@ function PrincipalHeader() {
                 sx={{
                   width: { xs: "80%", sm: "350px" },
                   height: { xs: "auto", sm: "520px" },
-                  
                 }}
               >
                 <Image
@@ -167,7 +172,7 @@ function PrincipalHeader() {
                   height={400}
                   src={"/trainerInfo.png"}
                   alt={"image-header-trainer"}
-                  style={{ maxWidth: "100%", height: "auto" }} 
+                  style={{ maxWidth: "100%", height: "auto" }}
                 />
               </Box>
               <Box
@@ -185,7 +190,7 @@ function PrincipalHeader() {
                   sx={{
                     marginTop: 2,
                     fontSize: { xs: "14px", sm: "16px", md: "18px" },
-                  }} 
+                  }}
                 >
                   Explore More
                 </Typography>
@@ -221,7 +226,13 @@ function PrincipalHeader() {
               sm={12}
               xs={12}
               sx={{
-                marginTop: { xs: "5vh", sm: "5vh", md: "0vh", lg: "0vh", xl: "0vh" },
+                marginTop: {
+                  xs: "5vh",
+                  sm: "5vh",
+                  md: "0vh",
+                  lg: "0vh",
+                  xl: "0vh",
+                },
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
@@ -279,7 +290,13 @@ function PrincipalHeader() {
               sm={12}
               xs={12}
               sx={{
-                marginTop: { xs: "5vh", sm: "5vh", md: "0vh", lg: "0vh", xl: "0vh" },
+                marginTop: {
+                  xs: "5vh",
+                  sm: "5vh",
+                  md: "0vh",
+                  lg: "0vh",
+                  xl: "0vh",
+                },
                 marginLeft: 3,
                 marginRight: 3,
                 display: "flex",
@@ -327,7 +344,7 @@ function PrincipalHeader() {
                       alignItems: "center",
                       paddingTop: 2,
                       paddingBottom: 2.5,
-                      fontSize: { xs: 35, sm: 35, md: 40, lg: 40, xl: 50 },
+                      fontSize: { xs: 30, sm: 35, md: 30, lg: 40, xl: 50 },
                     }}
                   >
                     Improve Your Riding Skill Through Training With Us.
@@ -369,7 +386,13 @@ function PrincipalHeader() {
                 sx={{
                   width: "100%",
                   height: "100%",
-                  marginTop: { xs: "5vh", sm: "5vh", md: "-10px", lg: "-490px", xl: "-490px" },
+                  marginTop: {
+                    xs: "5vh",
+                    sm: "5vh",
+                    md: "-10px",
+                    lg: "-490px",
+                    xl: "-490px",
+                  },
                   paddingTop: 13,
                   paddingBottom: 13,
                   paddingLeft: 8,
@@ -398,11 +421,7 @@ function PrincipalHeader() {
                   </Typography>
                 </Box>
                 <Box component={"div"}>
-                  <Typography
-                    component={"div"}
-                    variant={"h5"}
-                    
-                  >
+                  <Typography component={"div"} variant={"h5"}>
                     Years we have been giving Services carefully
                   </Typography>
                 </Box>
@@ -456,7 +475,6 @@ function PrincipalHeader() {
                   alignItems: "center",
                   flexDirection: "column",
                   position: "relative",
-                  
                 }}
               >
                 <Box
@@ -467,7 +485,6 @@ function PrincipalHeader() {
                     backgroundRepeat: "no-repeat",
                     width: "100%",
                     height: "100%",
-                    
                   }}
                 />
               </Box>
