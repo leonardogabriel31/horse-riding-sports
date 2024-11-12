@@ -12,7 +12,7 @@ function RiderAreSaying() {
           justifyContent: "center",
           alignItems: "center",
           textAlign: "center",
-          marginTop: "-370px",
+          marginTop: { xs: "40vh", sm: "60vh", md: "60vh", lg: "60px", xl: "60px" },
         }}
       >
         <Box
@@ -60,10 +60,20 @@ function RiderAreSaying() {
                 justifyContent: "center",
                 alignItems: "center",
                 transition: "0.5s linear",
-                transform: "perspective(150px) rotateY(5deg)",
+                transform: {
+                  sm: "perspective(150px) rotatex(-5deg)",
+                  md: "perspective(150px) rotatex(-5deg)",
+                  lg: "perspective(150px) rotatey(5deg)",
+                  xl: "perspective(150px) rotatey(5deg)",
+                },
                 position: "relative",
                 "&:hover": {
-                  transform: "rotateY(0deg)",
+                  transform: {
+                    sm: "rotatey(0deg)",
+                    md: "rotatey(0deg)",
+                    lg: "rotatey(0deg)",
+                    xl: "rotatey(0deg)",
+                  },
                 },
                 "&:hover .overlay": {
                   transition: "0.5s linear",
@@ -187,14 +197,19 @@ function RiderAreSaying() {
                 justifyContent: "center",
                 alignItems: "center",
                 transition: "0.5s linear",
-                transform: "perspective(150px) rotateY(-5deg)",
-                position: "relative", // Necesario para el pseudo-elemento
+                transform: {
+                  sm: "perspective(150px) rotatex(5deg)",
+                  md: "perspective(150px) rotatex(5deg)",
+                  lg: "perspective(150px) rotatey(-5deg)",
+                  xl: "perspective(150px) rotatey(-5deg)",
+                },
+                position: "relative", 
                 "&:hover": {
                   transform: "rotateY(0deg)",
                 },
                 "&:hover .overlay": {
                   transition: "0.5s linear",
-                  opacity: 0, // Oculta la superposición al hacer hover
+                  opacity: 0, 
                 },
               }}
             >
@@ -220,7 +235,7 @@ function RiderAreSaying() {
                     justifyContent: "center",
                     alignItems: "center",
                     flexDirection: "column",
-                    position: "relative", // Necesario para el overlay
+                    position: "relative", 
                   }}
                 >
                   <Box
@@ -242,10 +257,10 @@ function RiderAreSaying() {
                       left: 0,
                       width: "100%",
                       height: "100%",
-                      backgroundColor: "rgba(0, 0, 0, 0.5)", // Color oscuro
+                      backgroundColor: "rgba(0, 0, 0, 0.5)", 
                       borderRadius: "20px",
-                      transition: "opacity 0.5s ease", // Transición suave
-                      opacity: 1, // Inicialmente visible
+                      transition: "opacity 0.5s ease", 
+                      opacity: 1, 
                       transition: "0.5s linear",
                     }}
                   />

@@ -9,8 +9,8 @@ import Link from "next/link";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
+import MenuIcon from "@mui/icons-material/Menu";
 import { ButtonsNavbar } from "@/services/buttonsNavbar";
-import { StyledToolbar } from "@/styles/index";
 
 function Navbar() {
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -29,13 +29,14 @@ function Navbar() {
           background: "transparent",
           transition: "background 0.4s",
           padding: 2,
-          paddingLeft: 23,
-          paddingRight: 23,
+          paddingLeft: 3,
+          paddingRight: 3,
         }}
       >
         <Toolbar
           sx={{
             display: "flex",
+            flexWrap: "wrap",
             justifyContent: "space-between",
             alignItems: "center",
           }}
@@ -46,45 +47,49 @@ function Navbar() {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              gap: 2,
+              gap: 1,
             }}
           >
             <Box component={"div"}>
               <Typography
-                variant={"h1"}
+                variant="h2"
                 sx={{ fontWeight: "bold", color: "#fC4B08" }}
               >
                 HR
               </Typography>
             </Box>
             <Box component={"div"}>
-              <Typography variant={"h6"}>Horse</Typography>
-              <Typography variant={"h6"}>Riding</Typography>
+              <Typography variant="body1" sx={{ fontSize: 20 }}>
+                Horse
+              </Typography>
+              <Typography variant="body1" sx={{ fontSize: 20 }}>
+                Riding
+              </Typography>
             </Box>
           </Box>
           <Box
             component={"div"}
-            sx={{ display: "flex", alignItems: "center", gap: 3 }}
+            sx={{ display: "flex", alignItems: "center", gap: 2 }}
           >
-            {ButtonsNavbar.map((buttonNavbar, index) => (
-              <Link key={index} href={buttonNavbar.route}>
-                <Button
-                  sx={{
-                    display: { xs: isSmallScreen ? "none" : "inline" },
-                    fontSize: 20,
-                    color: "rgb(200, 200, 200)",
-                    textTransform: "none",
-                    "&:hover": {
-                      color: "white",
-                      backgroundColor: "#fC4B08",
-                    },
-                    marginRight: 2, // Espacio entre los botones
-                  }}
-                >
-                  {buttonNavbar.name}
-                </Button>
-              </Link>
-            ))}
+            {!isSmallScreen &&
+              ButtonsNavbar.map((buttonNavbar, index) => (
+                <Link key={index} href={buttonNavbar.route}>
+                  <Button
+                    sx={{
+                      fontSize: { xs: 14, md: 20 },
+                      color: "rgb(200, 200, 200)",
+                      textTransform: "none",
+                      "&:hover": {
+                        color: "white",
+                        backgroundColor: "#fC4B08",
+                      },
+                      marginRight: 2,
+                    }}
+                  >
+                    {buttonNavbar.name}
+                  </Button>
+                </Link>
+              ))}
           </Box>
           <Box component={"div"}>
             <Button
@@ -93,19 +98,22 @@ function Navbar() {
                 backgroundColor: "#fC4B08",
                 color: "white",
                 textTransform: "none",
-                fontSize: "1.20rem",
+                fontSize: { xs: "1rem", md: "1.20rem" },
               }}
             >
               Contact Us | <ArrowOutwardIcon />
             </Button>
           </Box>
+          {isSmallScreen && (
+            <MenuIcon onClick={toggleDrawer(true)} sx={{ cursor: "pointer", fontSize: 35 }} />
+          )}
         </Toolbar>
       </AppBar>
       <Drawer anchor="left" open={openDrawer} onClose={toggleDrawer(false)}>
         <List>
           {ButtonsNavbar.map((buttonNavbar, index) => (
             <Link href={buttonNavbar.route} key={index}>
-              <ListItem>{buttonNavbar.name}</ListItem>
+              <ListItem button>{buttonNavbar.name}</ListItem>
             </Link>
           ))}
         </List>

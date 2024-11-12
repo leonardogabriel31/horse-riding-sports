@@ -1,24 +1,40 @@
 import { Box } from "@mui/material";
-import React, { Fragment } from "react";
+import React from "react";
 
 function Line() {
   return (
-    <Fragment>
+    <Box
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        width: "100%",
+        marginTop: 3,
+      }}
+    >
       <Box
-        component={"div"}
-        sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
-      >
-        <Box
-          component={"hr"}
-          sx={{
-            border: "none",
-            borderTop: "3px dashed rgb(200, 200, 200)", 
-            width: "100%", 
-            margin: "16px 940px", 
-          }}
-        />
-      </Box>
-    </Fragment>
+        component={"hr"}
+        sx={{
+          border: "none",
+          borderTop: "3px dashed rgb(200, 200, 200)",
+          width: "100%",
+          marginLeft: {
+            xs: "37vw",
+            sm: "40vw",
+            md: "40vw",
+            lg: "42vw",
+            xl: "42vw",
+          },
+          marginRight: {
+            xs: "33vw",
+            sm: "36vw",
+            md: "38vw",
+            lg: "42vw",
+            xl: "44vw",
+          },
+        }}
+      />
+    </Box>
   );
 }
 

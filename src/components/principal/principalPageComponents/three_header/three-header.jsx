@@ -18,7 +18,7 @@ function ThreeHeader() {
           alignItems: "center",
           width: "100%",
           height: "100%",
-          marginTop: "-95px",
+          marginTop: "0vh",
           paddingBottom: "100px",
         }}
       >

@@ -11,8 +11,13 @@ function Footer() {
         component={"div"}
         sx={{
           background: "rgb(0, 20, 28)",
-          marginTop: "-140px",
+          marginTop: {xs: "-220px", sm: "-140px", md: "-140px", lg: "-140px", xl: "-140px"},
           paddingBottom: 6,
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          textAlign: "center",
         }}
       >
         <NavbarFooter />

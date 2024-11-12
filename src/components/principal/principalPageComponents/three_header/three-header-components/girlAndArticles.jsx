@@ -10,17 +10,23 @@ function GirlAndArticles() {
         <Grid
           container
           direction="row"
-          spacing={2}
+          spacing={3}
           sx={{
             justifyContent: "center",
             alignItems: "center",
             paddingLeft: "100px",
             paddingRight: "190px",
+            marginTop: { md: "-120px", lg: "-360px", xl: "-360px" },
           }}
         >
           <Grid
+            id={"1"}
             item
             xl={3}
+            lg={3}
+            md={6}
+            sm={6}
+            xs={6}
             sx={{
               color: "rgb(200, 200, 200)",
               display: "flex",
@@ -31,8 +37,14 @@ function GirlAndArticles() {
             <Box
               component={"div"}
               sx={{
-                width: "530px",
-                height: "970px",
+                width: {
+                  xs: "43vh",
+                  sm: "100%",
+                  md: "100%",
+                  lg: "100%",
+                  xl: "100%",
+                },
+                height: { xs: "40vh", sm: "50vh", md: "970px" },
                 paddingBottom: "50px",
                 borderRadius: "20px",
                 display: "flex",
@@ -45,19 +57,30 @@ function GirlAndArticles() {
                 component={"div"}
                 sx={{
                   backgroundImage: "url(our-selling-girl.png)",
-                  backgroundSize: "cover",
+                  backgroundSize: {
+                    xs: "cover",
+                    sm: "contain",
+                    md: "contain",
+                    lg: "contain",
+                    xl: "contain",
+                  }, 
                   backgroundRepeat: "no-repeat",
                   width: "100%",
-                  height: "83%",
-                  transform: "translate(0px, -470px)",
+                  height: "100%",
+                  objectFit: "contain", 
                 }}
               />
             </Box>
           </Grid>
 
           <Grid
+            id={"2"}
             item
             xl={3}
+            lg={3}
+            md={6}
+            sm={6}
+            xs={12}
             sx={{
               color: "rgb(200, 200, 200)",
               display: "flex",
@@ -65,18 +88,24 @@ function GirlAndArticles() {
               alignItems: "flex-end",
               width: "100%",
               height: "100%",
+              marginBottom: { sm: -30, md: -40, lg: -40, xl: -40 },
             }}
           >
             <Box
               component={"div"}
               sx={{
-                width: "750px",
-                height: "400px",
+                width: { xs: "30vw", sm: "80%", md: "750px" }, 
+                height: {
+                  xs: "22vh",
+                  sm: "25vh",
+                  md: "400px",
+                  lg: "25vh",
+                  xl: "40vh",
+                }, 
                 background: "rgb(249, 255, 254)",
-                paddingTop: "50px",
-                paddingBottom: "50px",
+                paddingTop: "20px", 
+                paddingBottom: "20px",
                 borderRadius: "20px",
-                transform: "translate(0px, -220px)",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
@@ -87,10 +116,11 @@ function GirlAndArticles() {
                 component={"div"}
                 sx={{
                   backgroundImage: "url(helmet.png)",
-                  backgroundSize: "cover",
+                  backgroundSize: "contain", 
                   backgroundRepeat: "no-repeat",
                   width: "55%",
                   height: "80%",
+                  margin: "0 auto", 
                 }}
               />
               <Box
@@ -117,8 +147,13 @@ function GirlAndArticles() {
           </Grid>
 
           <Grid
+            id={"3"}
             item
             xl={1}
+            lg={1}
+            md={6}
+            sm={6}
+            xs={12}
             sx={{
               color: "rgb(200, 200, 200)",
               width: "100%",
@@ -132,7 +167,12 @@ function GirlAndArticles() {
                 justifyContent: "center",
                 alignItems: "center",
                 flexDirection: "column",
-                transform: "translate(0px, -240px)",
+                transform: {
+                  sm: "translate(0px, 50px)",
+                  md: "translate(0px, 50px)",
+                  lg: "translate(0px, 30px)",
+                  xl: "translate(0px, 50px)",
+                },
               }}
             >
               <Box
@@ -145,6 +185,7 @@ function GirlAndArticles() {
                   height: 90,
                   border: "2px solid rgba(200, 200, 200, 0.5)",
                   borderRadius: "50%",
+                  cursor: "pointer",
                 }}
               >
                 <ArrowOutwardIcon
@@ -162,8 +203,13 @@ function GirlAndArticles() {
           </Grid>
 
           <Grid
+            id={"4"}
             item
             xl={2}
+            lg={2}
+            md={6}
+            sm={6}
+            xs={12}
             sx={{
               color: "rgb(200, 200, 200)",
               display: "flex",
@@ -171,33 +217,40 @@ function GirlAndArticles() {
               alignItems: "center",
               width: "100%",
               height: "100%",
+              marginBottom: { sm: -10 },
             }}
           >
             <Box
               component={"div"}
               sx={{
-                width: "530px",
-                height: "480px",
+                width: { xs: "35vw", sm: "80%", md: "530px" }, 
+                height: {
+                  xs: "30vh",
+                  sm: "30vh",
+                  md: "480px",
+                  lg: "25vh",
+                  xl: "40vh",
+                }, 
                 background: "rgb(249, 255, 254)",
-                paddingTop: "50px",
-                paddingBottom: "50px",
+                paddingTop: "20px", 
+                paddingBottom: "20px",
                 borderRadius: "20px",
-                transform: "translate(0px, -350px)",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
                 flexDirection: "column",
                 zIndex: 1,
+                marginTop: { md: -15 },
               }}
             >
               <Box
                 component={"div"}
                 sx={{
                   backgroundImage: "url(boots.png)",
-                  backgroundSize: "cover",
+                  backgroundSize: "contain", 
                   backgroundRepeat: "no-repeat",
-                  width: "85%",
-                  height: "77%",
+                  width: "100%",
+                  height: "100%",
                 }}
               />
               <Box
@@ -224,39 +277,54 @@ function GirlAndArticles() {
           </Grid>
 
           <Grid
+            id={"5"}
             item
             xl={3}
+            lg={3}
+            md={6}
+            sm={6}
+            xs={12}
             sx={{
               color: "rgb(200, 200, 200)",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              marginBottom: { sm: -30 },
+              marginTop: { md: "80px", xl: "-220px" },
             }}
           >
             <Box
               component={"div"}
               sx={{
-                width: "540px",
-                height: "480px",
+                width: { xs: "33vw", sm: "80%", md: "540px" }, 
+                height: {
+                  xs: "32vh",
+                  sm: "30vh",
+                  md: "480px",
+                  lg: "30vh",
+                  xl: "45vh",
+                }, 
                 background: "rgb(249, 255, 254)",
-                paddingTop: "50px",
-                paddingBottom: "50px",
+                paddingTop: "20px", 
+                paddingBottom: "20px",
                 borderRadius: "20px",
-                transform: "translate(0px, -260px)",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
                 flexDirection: "column",
+                marginBottom: -30,
               }}
             >
               <Box
                 component={"div"}
                 sx={{
                   backgroundImage: "url(jersey.png)",
-                  backgroundSize: "cover",
+                  backgroundSize: "contain", 
                   backgroundRepeat: "no-repeat",
-                  width: "60%",
-                  height: "75%",
+                  width: "100%",
+                  height: "100%",
+                  margin: "0 auto", 
+                  marginTop: { xs: "10px", md: "20px" }, 
                 }}
               />
               <Box
