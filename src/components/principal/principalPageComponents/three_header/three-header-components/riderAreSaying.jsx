@@ -30,7 +30,7 @@ function RiderAreSaying() {
               color: "rgb(200, 200, 200)",
             }}
           >
-            What's Riders Are Saying
+            What&apos;s Riders Are Saying
           </Typography>
         </Box>
 

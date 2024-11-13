@@ -38,7 +38,7 @@ function SecondHeader() {
           <Box
             component={"div"}
             sx={{
-              marginLeft: { xs: 5, sm: 26, md: 26, lg: 26, xl: 26 },
+              marginLeft: { xs: 5, sm: 25, md: 26, lg: 26, xl: 26 },
               marginBottom: { xs: 1 },
               width: 510,
             }}
