@@ -33,7 +33,6 @@ function FourHeader() {
           >
             <Grid
               item
-              id={"4"}
               xl={12}
               lg={12}
               md={12}
@@ -63,7 +62,7 @@ function FourHeader() {
                   component={"div"}
                   sx={{
                     width: "100%",
-                    height: "365px",
+                    height: "30vh",
                     borderRadius: "20px",
                     display: "flex",
                     justifyContent: "center",
@@ -147,7 +146,7 @@ function FourHeader() {
                   sx={{
                     marginTop: { md: "30px", lg: "-60px", xl: "-60px" },
                     width: {
-                      xl: "26vw",
+                      xl: "19.5vw",
                       lg: "25vw",
                       md: "35vw",
                       sm: "30vw",
@@ -318,7 +317,7 @@ function FourHeader() {
                   component={"div"}
                   sx={{
                     width: "100%",
-                    height: "260px",
+                    height: "25vh",
                     borderRadius: "20px",
                     display: "flex",
                     justifyContent: "center",

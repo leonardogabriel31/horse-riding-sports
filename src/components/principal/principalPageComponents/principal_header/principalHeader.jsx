@@ -35,7 +35,7 @@ function PrincipalHeader() {
                 sm: "22vh",
                 md: "20vh",
                 lg: "-2vh",
-                xl: "-3vh",
+                xl: "-5vh",
               },
               display: "flex",
               justifyContent: "center",

@@ -12,7 +12,13 @@ function RiderAreSaying() {
           justifyContent: "center",
           alignItems: "center",
           textAlign: "center",
-          marginTop: { xs: "40vh", sm: "60vh", md: "60vh", lg: "60px", xl: "60px" },
+          marginTop: {
+            xs: "40vh",
+            sm: "60vh",
+            md: "60vh",
+            lg: "30vh",
+            xl: "60px",
+          },
         }}
       >
         <Box
@@ -26,7 +32,7 @@ function RiderAreSaying() {
             variant={"h2"}
             sx={{
               fontWeight: "bold",
-              fontSize: 70,
+              fontSize: { xs: 60, sm: 70, md: 70, lg: 70, xl: 70 },
               color: "rgb(200, 200, 200)",
             }}
           >
@@ -54,6 +60,10 @@ function RiderAreSaying() {
               item
               id={"1"}
               xl={4}
+              lg={4}
+              md={4}
+              sm={12}
+              xs={12}
               sx={{
                 color: "rgb(200, 200, 200)",
                 display: "flex",
@@ -62,7 +72,7 @@ function RiderAreSaying() {
                 transition: "0.5s linear",
                 transform: {
                   sm: "perspective(150px) rotatex(-5deg)",
-                  md: "perspective(150px) rotatex(-5deg)",
+                  md: "perspective(150px) rotatey(5deg)",
                   lg: "perspective(150px) rotatey(5deg)",
                   xl: "perspective(150px) rotatey(5deg)",
                 },
@@ -96,8 +106,20 @@ function RiderAreSaying() {
                 <Box
                   component={"div"}
                   sx={{
-                    width: "520px",
-                    height: "600px",
+                    width: {
+                      xs: "52vw",
+                      sm: "52vw",
+                      md: "26vw",
+                      lg: "26vw",
+                      xl: "24vw",
+                    },
+                    height: {
+                      xs: "60vw",
+                      sm: "60vw",
+                      md: "30vw",
+                      lg: "45vh",
+                      xl: "60vh",
+                    },
                     borderRadius: "20px",
                     display: "flex",
                     justifyContent: "center",
@@ -141,6 +163,10 @@ function RiderAreSaying() {
               item
               id={"2"}
               xl={4}
+              lg={4}
+              md={4}
+              sm={12}
+              xs={12}
               sx={{
                 color: "rgb(200, 200, 200)",
                 display: "flex",
@@ -163,8 +189,20 @@ function RiderAreSaying() {
                 <Box
                   component={"div"}
                   sx={{
-                    width: "520px",
-                    height: "600px",
+                    width: {
+                      xs: "52vw",
+                      sm: "52vw",
+                      md: "26vw",
+                      lg: "26vw",
+                      xl: "24vw",
+                    },
+                    height: {
+                      xs: "60vw",
+                      sm: "60vw",
+                      md: "30vw",
+                      lg: "45vh",
+                      xl: "60vh",
+                    },
                     borderRadius: "20px",
                     display: "flex",
                     justifyContent: "center",
@@ -191,6 +229,10 @@ function RiderAreSaying() {
               item
               id={"3"}
               xl={4}
+              lg={4}
+              md={4}
+              sm={12}
+              xs={12}
               sx={{
                 color: "rgb(200, 200, 200)",
                 display: "flex",
@@ -199,17 +241,17 @@ function RiderAreSaying() {
                 transition: "0.5s linear",
                 transform: {
                   sm: "perspective(150px) rotatex(5deg)",
-                  md: "perspective(150px) rotatex(5deg)",
+                  md: "perspective(150px) rotatey(-5deg)",
                   lg: "perspective(150px) rotatey(-5deg)",
                   xl: "perspective(150px) rotatey(-5deg)",
                 },
-                position: "relative", 
+                position: "relative",
                 "&:hover": {
                   transform: "rotateY(0deg)",
                 },
                 "&:hover .overlay": {
                   transition: "0.5s linear",
-                  opacity: 0, 
+                  opacity: 0,
                 },
               }}
             >
@@ -228,14 +270,26 @@ function RiderAreSaying() {
                 <Box
                   component={"div"}
                   sx={{
-                    width: "520px",
-                    height: "600px",
+                    width: {
+                      xs: "52vw",
+                      sm: "52vw",
+                      md: "26vw",
+                      lg: "26vw",
+                      xl: "24vw",
+                    },
+                    height: {
+                      xs: "60vw",
+                      sm: "60vw",
+                      md: "30vw",
+                      lg: "45vh",
+                      xl: "60vh",
+                    },
                     borderRadius: "20px",
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
                     flexDirection: "column",
-                    position: "relative", 
+                    position: "relative",
                   }}
                 >
                   <Box
@@ -257,10 +311,10 @@ function RiderAreSaying() {
                       left: 0,
                       width: "100%",
                       height: "100%",
-                      backgroundColor: "rgba(0, 0, 0, 0.5)", 
+                      backgroundColor: "rgba(0, 0, 0, 0.5)",
                       borderRadius: "20px",
-                      transition: "opacity 0.5s ease", 
-                      opacity: 1, 
+                      transition: "opacity 0.5s ease",
+                      opacity: 1,
                       transition: "0.5s linear",
                     }}
                   />
@@ -281,7 +335,12 @@ function RiderAreSaying() {
               item
               id={"4"}
               xl={12}
+              lg={12}
+              md={12}
+              sm={12}
+              xs={12}
               sx={{
+                // background: "rgb(4, 20, 27)",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
@@ -291,7 +350,7 @@ function RiderAreSaying() {
                 component={"div"}
                 sx={{
                   width: "100%",
-                  borderRadius: "20px",
+                  // borderRadius: "20px",
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
@@ -302,8 +361,8 @@ function RiderAreSaying() {
                   component={"div"}
                   sx={{
                     width: "100%",
-                    height: "160px",
-                    borderRadius: "20px",
+                    height: {xs: "5vh", sm: "8vh", md: "11vh", lg: "13vh", xl: "16vh"},
+                    // borderRadius: "20px",
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",

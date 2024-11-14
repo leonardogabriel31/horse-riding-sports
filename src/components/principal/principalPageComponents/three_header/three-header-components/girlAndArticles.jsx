@@ -15,8 +15,8 @@ function GirlAndArticles() {
             justifyContent: "center",
             alignItems: "center",
             paddingLeft: "100px",
-            paddingRight: "190px",
-            marginTop: { md: "-120px", lg: "-360px", xl: "-360px" },
+            paddingRight: "180px",
+            marginTop: { md: "-50px", lg: "-200px", xl: "-360px" },
           }}
         >
           <Grid
@@ -38,14 +38,20 @@ function GirlAndArticles() {
               component={"div"}
               sx={{
                 width: {
-                  xs: "43vh",
+                  xs: "46vh",
                   sm: "100%",
                   md: "100%",
                   lg: "100%",
                   xl: "100%",
                 },
-                height: { xs: "40vh", sm: "50vh", md: "970px" },
-                paddingBottom: "50px",
+                height: {
+                  xs: "40vh",
+                  sm: "50vh",
+                  md: "50vh",
+                  lg: "50vh",
+                  xl: "90vh",
+                },
+                paddingBottom: "20px",
                 borderRadius: "20px",
                 display: "flex",
                 justifyContent: "center",
@@ -63,11 +69,11 @@ function GirlAndArticles() {
                     md: "contain",
                     lg: "contain",
                     xl: "contain",
-                  }, 
+                  },
                   backgroundRepeat: "no-repeat",
                   width: "100%",
                   height: "100%",
-                  objectFit: "contain", 
+                  objectFit: "contain",
                 }}
               />
             </Box>
@@ -88,22 +94,28 @@ function GirlAndArticles() {
               alignItems: "flex-end",
               width: "100%",
               height: "100%",
-              marginBottom: { sm: -30, md: -40, lg: -40, xl: -40 },
+              marginBottom: { sm: -30, md: -40, lg: -40, xl: -45 },
             }}
           >
             <Box
               component={"div"}
               sx={{
-                width: { xs: "30vw", sm: "80%", md: "750px" }, 
+                width: {
+                  xs: "35vw",
+                  sm: "80%",
+                  md: "50vw",
+                  lg: "15vw",
+                  xl: "18vw",
+                },
                 height: {
-                  xs: "22vh",
+                  xs: "35vh",
                   sm: "25vh",
                   md: "400px",
-                  lg: "25vh",
-                  xl: "40vh",
-                }, 
+                  lg: "35vh",
+                  xl: "49vh",
+                },
                 background: "rgb(249, 255, 254)",
-                paddingTop: "20px", 
+                paddingTop: "20px",
                 paddingBottom: "20px",
                 borderRadius: "20px",
                 display: "flex",
@@ -116,11 +128,11 @@ function GirlAndArticles() {
                 component={"div"}
                 sx={{
                   backgroundImage: "url(helmet.png)",
-                  backgroundSize: "contain", 
+                  backgroundSize: "contain",
                   backgroundRepeat: "no-repeat",
-                  width: "55%",
-                  height: "80%",
-                  margin: "0 auto", 
+                  width: "100%",
+                  height: "100%",
+                  margin: "0 auto",
                 }}
               />
               <Box
@@ -223,16 +235,16 @@ function GirlAndArticles() {
             <Box
               component={"div"}
               sx={{
-                width: { xs: "35vw", sm: "80%", md: "530px" }, 
+                width: { xs: "35vw", sm: "20vw", md: "30vw", xl: "50vw" },
                 height: {
-                  xs: "30vh",
-                  sm: "30vh",
-                  md: "480px",
-                  lg: "25vh",
+                  xs: "35vh",
+                  sm: "35vh",
+                  md: "49vh",
+                  lg: "32vh",
                   xl: "40vh",
-                }, 
+                },
                 background: "rgb(249, 255, 254)",
-                paddingTop: "20px", 
+                paddingTop: "20px",
                 paddingBottom: "20px",
                 borderRadius: "20px",
                 display: "flex",
@@ -240,14 +252,14 @@ function GirlAndArticles() {
                 alignItems: "center",
                 flexDirection: "column",
                 zIndex: 1,
-                marginTop: { md: -15 },
+                marginTop: { md: 15 },
               }}
             >
               <Box
                 component={"div"}
                 sx={{
                   backgroundImage: "url(boots.png)",
-                  backgroundSize: "contain", 
+                  backgroundSize: "contain",
                   backgroundRepeat: "no-repeat",
                   width: "100%",
                   height: "100%",
@@ -285,27 +297,34 @@ function GirlAndArticles() {
             sm={6}
             xs={12}
             sx={{
+              zIndex: 1,
               color: "rgb(200, 200, 200)",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
               marginBottom: { sm: -30 },
-              marginTop: { md: "80px", xl: "-220px" },
+              marginTop: { sm: "50px", md: "80px", lg: "-295px", xl: "-290px" },
             }}
           >
             <Box
               component={"div"}
               sx={{
-                width: { xs: "33vw", sm: "80%", md: "540px" }, 
+                width: {
+                  xs: "33vw",
+                  sm: "20vw",
+                  md: "23vw",
+                  lg: "50vw",
+                  xl: "18vw",
+                },
                 height: {
-                  xs: "32vh",
-                  sm: "30vh",
-                  md: "480px",
-                  lg: "30vh",
-                  xl: "45vh",
-                }, 
+                  xs: "35vh",
+                  sm: "35vh",
+                  md: "45vh",
+                  lg: "45vh",
+                  xl: "58vh",
+                },
                 background: "rgb(249, 255, 254)",
-                paddingTop: "20px", 
+                paddingTop: "20px",
                 paddingBottom: "20px",
                 borderRadius: "20px",
                 display: "flex",
@@ -319,12 +338,13 @@ function GirlAndArticles() {
                 component={"div"}
                 sx={{
                   backgroundImage: "url(jersey.png)",
-                  backgroundSize: "contain", 
+                  backgroundSize: "contain", // Cambia a "cover" si necesitas que la imagen llene todo el contenedor
                   backgroundRepeat: "no-repeat",
                   width: "100%",
                   height: "100%",
-                  margin: "0 auto", 
-                  marginTop: { xs: "10px", md: "20px" }, 
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center", // Asegúrate de centrar la imagen
                 }}
               />
               <Box
