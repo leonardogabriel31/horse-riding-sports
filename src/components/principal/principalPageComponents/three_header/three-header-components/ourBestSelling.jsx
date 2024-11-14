@@ -22,7 +22,7 @@ function ourBestSelling() {
               xs: "none",
               sm: "none",
               md: "none",
-              lg: "none",
+              lg: "flex",
               xl: "flex",
             },
             justifyContent: "center",
@@ -47,7 +47,7 @@ function ourBestSelling() {
           id={"2"}
           item
           xl={5}
-          lg={6}
+          lg={5}
           md={6}
           sm={8}
           xs={7}
@@ -88,7 +88,7 @@ function ourBestSelling() {
                 display: "flex",
                 justifyContent: "flex-end",
                 alignItems: "flex-end",
-                paddingLeft: { md: "0px", lg: "300px", xl: "300px" },
+                paddingLeft: { md: "0px", lg: "200px", xl: "300px" },
               }}
             >
               <Typography component={"div"} variant={"h6"} sx={{ zIndex: 1 }}>
@@ -104,7 +104,7 @@ function ourBestSelling() {
           id={"3"}
           item
           xl={4}
-          lg={6}
+          lg={4}
           md={6}
           sm={4}
           xs={5}
