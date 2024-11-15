@@ -3,9 +3,7 @@ import Image from "next/image";
 import React, { Fragment } from "react";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
-import TrainerInfo from "./trainerInfo";
 
 function PrincipalHeader() {
   return (

@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 import { Box, Grid, Typography } from "@mui/material";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
-import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 
 function GirlAndArticles() {
   return (

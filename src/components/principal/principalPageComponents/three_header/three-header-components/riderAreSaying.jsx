@@ -340,7 +340,6 @@ function RiderAreSaying() {
               sm={12}
               xs={12}
               sx={{
-                // background: "rgb(4, 20, 27)",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
@@ -350,7 +349,7 @@ function RiderAreSaying() {
                 component={"div"}
                 sx={{
                   width: "100%",
-                  // borderRadius: "20px",
+
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
@@ -361,8 +360,14 @@ function RiderAreSaying() {
                   component={"div"}
                   sx={{
                     width: "100%",
-                    height: {xs: "5vh", sm: "8vh", md: "11vh", lg: "13vh", xl: "16vh"},
-                    // borderRadius: "20px",
+                    height: {
+                      xs: "5vh",
+                      sm: "8vh",
+                      md: "11vh",
+                      lg: "13vh",
+                      xl: "16vh",
+                    },
+
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
