@@ -1,5 +1,5 @@
 import NavbarFooter from "@/components/navbar/navbarFooter";
-import { Box, Grid, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import React, { Fragment } from "react";
 import Line from "./line";
 import FooterText from "./footerText";
