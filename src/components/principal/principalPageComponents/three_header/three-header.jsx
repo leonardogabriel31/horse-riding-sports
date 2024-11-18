@@ -23,9 +23,13 @@ function ThreeHeader() {
         }}
       >
         <Sponsors />
-        <OurBestSelling />
+        <Box component={"div"} id={"our-best-selling"}>
+          <OurBestSelling />
+        </Box>
         <GirlAndArticles />
+        <Box component={"div"} id={"ownership"}>
         <RiderAreSaying />
+        </Box>
       </Box>
     </Fragment>
   );

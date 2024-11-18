@@ -57,7 +57,13 @@ function ourBestSelling() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            padding: {xs: "20px", sm: "70px", md: "70px", lg: "70px", xl: "70px"},
+            padding: {
+              xs: "20px",
+              sm: "70px",
+              md: "70px",
+              lg: "70px",
+              xl: "70px",
+            },
           }}
         >
           <Box component={"div"}>

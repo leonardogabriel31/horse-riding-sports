@@ -6,6 +6,7 @@ function SecondHeader() {
     <Fragment>
       <Box
         component={"div"}
+        id={"second-header"}
         sx={{
           background: "#F2FFFF",
           display: "flex",

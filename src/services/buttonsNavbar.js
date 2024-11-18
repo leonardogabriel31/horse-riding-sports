@@ -1,15 +1,15 @@
 export const ButtonsNavbar = [
-  { name: 'Home', route: '/' },
-  { name: 'Horses', route: '/' },
-  { name: 'Lessons', route: '/' },
-  { name: 'Ownership', route: '/' },
-  { name: 'Training', route: '/' },
+  { name: 'Home', route: '#home' },
+  { name: 'Horses', route: '#second-header' },
+  { name: 'Lessons', route: '#our-best-selling' },
+  { name: 'Ownership', route: '#ownership' },
+  { name: 'Training', route: '#training' },
 ];
 
 export const ButtonsNavbar2 = [
-  { name: 'Horses', route: '/' },
-  { name: 'Lessons', route: '/' },
-  { name: 'Ownership', route: '/' },
-  { name: 'Training', route: '/' },
-  { name: 'Contact', route: '/' },
+  { name: 'Horses', route: '#second-header' },
+  { name: 'Lessons', route: '#our-best-selling' },
+  { name: 'Ownership', route: '#ownership' },
+  { name: 'Training', route: '#training' },
+  { name: 'Contact', route: '#home' },
 ];
