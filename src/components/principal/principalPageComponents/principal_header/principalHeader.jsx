@@ -10,6 +10,7 @@ function PrincipalHeader() {
     <Fragment>
       <Box
         component={"div"}
+        id={"home"}
         sx={{
           background: "rgb(4, 20, 27)",
         }}

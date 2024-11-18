@@ -7,6 +7,7 @@ function FourHeader() {
     <Fragment>
       <Box
         component={"div"}
+        id={"training"}
         sx={{
           display: "flex",
           flexDirection: "column",

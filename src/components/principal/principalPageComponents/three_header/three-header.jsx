@@ -1,4 +1,4 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import React, { Fragment } from "react";
 import Sponsors from "./three-header-components/Sponsors";
 import OurBestSelling from "./three-header-components/ourBestSelling";
@@ -23,9 +23,13 @@ function ThreeHeader() {
         }}
       >
         <Sponsors />
-        <OurBestSelling />
+        <Box component={"div"} id={"our-best-selling"}>
+          <OurBestSelling />
+        </Box>
         <GirlAndArticles />
+        <Box component={"div"} id={"ownership"}>
         <RiderAreSaying />
+        </Box>
       </Box>
     </Fragment>
   );

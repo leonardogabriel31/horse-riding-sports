@@ -6,6 +6,7 @@ function SecondHeader() {
     <Fragment>
       <Box
         component={"div"}
+        id={"second-header"}
         sx={{
           background: "#F2FFFF",
           display: "flex",
@@ -18,7 +19,7 @@ function SecondHeader() {
             md: "70vh",
             lg: "90vh",
             xl: "100vh",
-          }, 
+          },
         }}
       >
         <Box
@@ -27,10 +28,10 @@ function SecondHeader() {
             backgroundImage: "url(/caballo.png)",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            backgroundAttachment: "scroll", 
+            backgroundAttachment: "scroll",
             backgroundPosition: "center",
             width: "100%",
-            height: "100%", 
+            height: "100%",
             display: "flex",
             flexDirection: "column",
           }}
@@ -46,7 +47,7 @@ function SecondHeader() {
             <Typography
               component={"div"}
               variant={"h2"}
-              sx={{ fontWeight: "bold", fontSize: { xs: 30, md: 75 } }} 
+              sx={{ fontWeight: "bold", fontSize: { xs: 30, md: 75 } }}
             >
               Racing Horse Details
             </Typography>
